@@ -1,8 +1,17 @@
-# DevSecOps-K8s-Java
-- This repo is created for configuring security in devops cycle of spring boot cycle
+# kubernetes-devops-security
 
-Tools used
+## Fork and Clone this Repo
 
-1) Talisman
-2) Kube-bench
+## Clone to Desktop and VM
 
+## NodeJS Microservice - Docker Image -
+`docker run -p 8787:5000 siddharth67/node-service:v1`
+
+`curl localhost:8787/plusone/99`
+ 
+## NodeJS Microservice - Kubernetes Deployment -
+`kubectl create deploy node-app --image siddharth67/node-service:v1`
+
+`kubectl expose deploy node-app --name node-service --port 5000 --type ClusterIP`
+
+`curl node-service-ip:5000/plusone/99`
