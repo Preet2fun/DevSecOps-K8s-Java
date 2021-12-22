@@ -6,7 +6,7 @@ pipeline {
     containerName = "devsecops-container"
     serviceName = "devsecops-svc"
     imageName = "preet2fun/numeric-app:${GIT_COMMIT}"
-    applicationURL = "http://localhost:8080/"
+    applicationURL = "http://localhost"
     applicationURI = "/increment/99"
   }
 
